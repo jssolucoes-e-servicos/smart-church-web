@@ -98,7 +98,7 @@ const ChartTwo: React.FC = () => {
   handleReset;
 
   return (
-    <div className="col-span-12 rounded-md border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
+    <div className="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <div className="mb-4 justify-between gap-4 sm:flex">
         <div>
           <h4 className="text-xl font-semibold text-black dark:text-white">
@@ -115,7 +115,7 @@ const ChartTwo: React.FC = () => {
               <option value="">This Week</option>
               <option value="">Last Week</option>
             </select>
-            <span className="absolute right-3 top-1/2 z-10 -translate-y-1/2">
+            <span className="absolute top-1/2 right-3 z-10 -translate-y-1/2">
               <svg
                 width="10"
                 height="6"
@@ -140,7 +140,7 @@ const ChartTwo: React.FC = () => {
       </div>
 
       <div>
-        <div id="chartTwo" className="-mb-9 -ml-5">
+        <div id="chartTwo" className="-ml-5 -mb-9">
           <ApexCharts
             options={options}
             series={state.series}

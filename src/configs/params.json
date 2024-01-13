@@ -1,0 +1,21 @@
+{
+  "application": {
+    "title": "ElBigodonApp"
+  },
+  "pages": {
+    "authentication" : {
+      "ava": {
+        "title" : "Login - AVA | ElBigodonApp",
+        "description": "Acesso ao Ambiente Vistual de Aprendizagem do ElBigodonApp"
+      }
+    },
+    "protected" :{
+      "ava": {
+        "dashboard": {
+        "title" : "AVA | ElBigodonApp",
+        "description": "Ambiente Vistual de Aprendizagem do ElBigodonApp"
+      }
+      }
+    }
+  }
+}

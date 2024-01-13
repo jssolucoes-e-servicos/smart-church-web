@@ -1,0 +1,9 @@
+
+export interface IUser {
+  id: string;
+  name: string;
+  genre: string;
+  birth?: string | null;
+  photo?: string | null;
+  email?: string | null;
+}

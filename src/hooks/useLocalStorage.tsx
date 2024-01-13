@@ -11,18 +11,13 @@ function useLocalStorage<T>(
   // Pass  initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = useState(() => {
     try {
-      if (key === "color-theme"){
-        return "dark";
-      } else {
-        // Get from local storage by key
-        if (typeof window !== "undefined") {
-          // browser code
-          const item = window.localStorage.getItem(key);
-          // Parse stored json or if none return initialValue
-          return item ? JSON.parse(item) : initialValue;
-        }
+      // Get from local storage by key
+      if (typeof window !== "undefined") {
+        // browser code
+        const item = window.localStorage.getItem(key);
+        // Parse stored json or if none return initialValue
+        return item ? JSON.parse(item) : initialValue;
       }
-      
     } catch (error) {
       // If error also return initialValue
       console.log(error);
